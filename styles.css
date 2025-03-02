@@ -16,27 +16,33 @@ body {
     font-style: normal; /* Укажите стиль шрифта */
 }
 /* border: solid 1px red; /*Временно */
+:root {
+    --title-color: rgb(143, 153, 188);
+    --text-color: rgb(4, 149, 155);
+    --link-text-hover: rgb(6, 185, 178);
+    --border-color: rgb(3, 72, 69);
+    --bg-color: rgba(0, 0, 0, 0.7);
+}
 .titleBlock {
-    color: rgb(143, 153, 188);
+    color: var(--title-color);
     width: 100%;
     height: auto;
     max-width: 500px;
     min-height: 40px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--bg-color);
     padding: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    padding-block: 10px;
 }
 .contentBlock {
     color: #fff;
     width: 100%;
     max-width: 500px;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--bg-color);
     padding: 10px;
     text-align: center;
     align-items: center;
@@ -44,17 +50,17 @@ body {
     display: flex;
 }
 a {
-    color: rgb(4, 149, 155); /* Цвет текста ссылки */
+    color: var(--text-color); /* Цвет текста ссылки */
     text-decoration: none; /* Убираем подчеркивание */
     margin-inline: 20px;
     margin-block: auto;
 }
 
 a:hover {
-    color: rgb(6, 185, 178); /* Цвет текста при наведении */
+    color: var(--link-text-hover); /* Цвет текста при наведении */
     text-decoration: none; /* Подчеркивание при наведении */
-    border-left: groove rgb(6, 185, 178);
-    border-right: groove rgb(6, 185, 178);
+    border-left: groove var(--link-text-hover);
+    border-right: groove var(--link-text-hover);
 }
 img {
     width: 100%; /* Изображение занимает 50% ширины контейнера */
@@ -63,8 +69,8 @@ img {
 }
 #afterlife {
     margin-top: 30px; 
-    border-bottom: 3px solid rgb(3, 72, 69);
+    border-bottom: 3px solid var(--border-color);
 }
 #enterTheMatrix {
-    border-bottom: solid rgb(3, 72, 69);
+    border-bottom: solid var(--border-color);
 }
