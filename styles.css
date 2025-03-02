@@ -7,7 +7,7 @@ body {
     justify-content: center; /* Центрируем по вертикали */
     align-items: center; /* Центрируем по горизонтали */
     background-image: url("Images/void.gif"); /* Укажите путь к своей картинке */
-    font-family: mason; /* Используйте шрифт */
+    font-family: mason url('Fonts/Mason.ttf');  /* Используйте шрифт */
 }
 /* border: solid 1px red; /*Временно */
 .titleBlock {
