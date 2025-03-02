@@ -53,8 +53,8 @@ a {
 a:hover {
     color: rgb(6, 185, 178); /* Цвет текста при наведении */
     text-decoration: none; /* Подчеркивание при наведении */
-    border-left: groove #034845;
-    border-right: groove #034845;
+    border-left: groove rgb(6, 185, 178);
+    border-right: groove rgb(6, 185, 178);
 }
 img {
     width: 100%; /* Изображение занимает 50% ширины контейнера */
