@@ -17,7 +17,7 @@ body {
 }
 /* border: solid 1px red; /*Временно */
 .titleBlock {
-    color: #8f99bc;
+    color: rgb(143, 153, 188);
     width: 100%;
     height: auto;
     max-width: 500px;
