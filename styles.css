@@ -1,19 +1,20 @@
 body {
     background-color: #000;
     margin: 0;
+    padding-block: 120px;
     height: 100vh;
     display: flex;
-    flex-direction: column; /* Контейнеры в столбец */
-    justify-content: center; /* Центрируем по вертикали */
-    align-items: center; /* Центрируем по горизонтали */
-    background-image: url("Images/void.gif"); /* Укажите путь к своей картинке */
-    font-family: 'Mason', sans-serif; /* Применяем шрифт */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Images/void.gif");
+    font-family: 'Mason', sans-serif;
 }
 @font-face {
-    font-family: 'Mason'; /* Название шрифта */
-    src: url('Fonts/Mason.ttf') format('truetype'); /* Добавьте другие форматы, если необходимо */
-    font-weight: normal; /* Укажите вес шрифта */
-    font-style: normal; /* Укажите стиль шрифта */
+    font-family: 'Mason';
+    src: url('Fonts/Mason.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 /* border: solid 1px red; /*Временно */
 :root {
@@ -50,22 +51,21 @@ body {
     display: flex;
 }
 a {
-    color: var(--text-color); /* Цвет текста ссылки */
-    text-decoration: none; /* Убираем подчеркивание */
+    color: var(--text-color);
+    text-decoration: none;
     margin-inline: 20px;
     margin-block: auto;
 }
 
 a:hover {
-    color: var(--link-text-hover); /* Цвет текста при наведении */
-    text-decoration: none; /* Подчеркивание при наведении */
+    color: var(--link-text-hover);
+    text-decoration: none;
     border-left: groove var(--link-text-hover);
     border-right: groove var(--link-text-hover);
 }
 img {
-    width: 100%; /* Изображение занимает 50% ширины контейнера */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
-    padding: 10px;
+    width: 100%;
+    height: auto;
 }
 #afterlife {
     margin-top: 30px; 
@@ -73,4 +73,30 @@ img {
 }
 #enterTheMatrix {
     border-bottom: solid var(--border-color);
+}
+#playgroundTitle {
+    margin-top: 30px; 
+    border-bottom: 3px solid var(--border-color);
+}
+#playgroundContent img {
+    border-radius: 5%;
+}
+#playgroundContent img:hover {
+    transform: scale(0);
+    transition: transform 35s ease;
+    border-radius: 5%;
+}
+#playgroundContent a:hover{
+    background-image: url("Images/test.gif");
+    border-radius: 5%;
+}
+#playgroundContent a {
+    border-left: none;
+    border-right: none;
+    margin-inline: 0;
+    margin-block: 0;
+}
+#playgroundContent a:hover {
+    border-left: none;
+    border-right: none;
 }
