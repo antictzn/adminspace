@@ -1,7 +1,7 @@
 body {
     background-color: #000;
     margin: 0;
-    padding-block: 120px;
+    padding-block: 200px;
     height: 100vh;
     display: flex;
     flex-direction: column;
