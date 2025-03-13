@@ -9,8 +9,6 @@ body {
     align-items: center;
     background-image: url("Images/void.gif");
     font-family: 'Mason', sans-serif;
-    margin-top: 10vh; /* Отступ сверху — 10% от высоты экрана */
-    margin-bottom: 10vh; /* Отступ снизу — 10% от высоты экрана */
 }
 @font-face {
     font-family: 'Mason';
